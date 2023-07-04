@@ -5,7 +5,7 @@ import { ContentModule } from './modules/content/content.module';
 import { CoreModule } from './modules/core/core.module';
 
 @Module({
-    imports: [CoreModule.forRoot(database()), ContentModule],
+    imports: [ContentModule, CoreModule.forRoot(database()), ContentModule],
     controllers: [],
     providers: [],
 })
